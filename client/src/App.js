@@ -1,24 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import TickerList from "./components/TickerList";
+import "./App.css";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App">
+          <div className="title-block">
+              <h1>Incode group & Finance</h1>
+              <h3>Currency table</h3>
+          </div>
+          <TickerList />
+      </div>
   );
 }
 

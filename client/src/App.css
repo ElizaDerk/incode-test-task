@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+*{
+    box-sizing: border-box;
+    margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background: #171d26;
+    color: #fafafa;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1{
+    font-size: 48px;
+    font-weight: 600;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h3{
+    font-size: 22px;
+    line-height: 1.4;
+    font-weight: 600;
+    margin-top: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+h3:after {
+    content: '';
+    display: block;
+    height: 3px;
+    background: #72b63b;
+    width: 0;
+    animation: slide-in 2s ease-in-out infinite;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes slide-in {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 50%;
+    }
+    100% {
+        width: 100%;
+    }
 }
+
+
+.title-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.table-container{
+    margin-top: 30px;
+}
+
+table {
+    margin: 0 auto;
+    width: 90%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table td, table th {
+    border: 1px solid #e3e3e3;
+    padding: 20px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+table th {
+    background-color: #f9f9f9;
+    color: #363636;
+    font-weight: bold;
+}
+
+td:first-child{
+    font-weight: bold;
+    color: #72b63b;
+}
+
+

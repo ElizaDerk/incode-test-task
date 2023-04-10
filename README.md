@@ -59,7 +59,7 @@ URL:
 
 Price tickers are real-time via web-sockets.
 
-## Example JSON Response from the Price Ticker service
+## Example JSON Response from the Price TickerItem service
 ```json
 [
   {
